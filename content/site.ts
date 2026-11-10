@@ -50,10 +50,9 @@ export const whatsapp = {
 
 export const address = {
   street: "Rua Oscar Nelson, 172",
-  district: "Grajaú",
-  city: "São Paulo",
-  /** CONFIRMAR: CEP. Quando preenchido, entra no endereço e na rota. */
-  postalCode: "",
+  district: "Jordanópolis",
+  city: "São Paulo - SP",
+  postalCode: "04830-410",
 };
 
 /** CONFIRMAR: horário de funcionamento. Vazio = a linha não aparece. */

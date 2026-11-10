@@ -30,6 +30,8 @@
     "dev": "vite dev",
     "build": "vite build",
     "start": "vite preview",
-    "deploy": "vinext-cloudflare deploy"
+    "preview": "vite preview",
+    "deploy": "vinext-cloudflare deploy",
+    "deploy:preview": "cf previews deploy"
   }
 }

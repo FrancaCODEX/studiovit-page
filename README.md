@@ -45,9 +45,12 @@ A configuração está em [`cloudflare.config.ts`](cloudflare.config.ts) (Worker
 sem domínio personalizado, sem KV/R2/D1). Nenhum token fica no repositório.
 
 ```bash
-npx cf auth login   # uma vez, abre o navegador
-npm run deploy      # compila e publica em *.workers.dev
+npx cf auth login        # uma vez, abre o navegador
+npm run deploy           # compila e publica em studiovit-conceito.<subdomínio>.workers.dev
+npm run deploy:preview   # publica uma prévia separada (URL própria), sem mexer na versão publicada
 ```
+
+`npm run preview` (ou `npm run start`) abre a prévia local do build, sem publicar nada.
 
 Em CI ou no Workers Builds (painel da Cloudflare, conectando este repositório):
 
