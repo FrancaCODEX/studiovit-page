@@ -16,7 +16,7 @@ export const DEMO_MODE = true;
 export const studio = {
   handle: "_studiovit",
   displayName: "Vit",
-  tagline: "Estúdio de tatuagem em Cristo Rei",
+  tagline: "Estúdio de tatuagem no Grajaú, zona sul",
   instagramUrl: "https://www.instagram.com/_studiovit/",
 };
 
@@ -50,9 +50,9 @@ export const whatsapp = {
 
 export const address = {
   street: "Rua Oscar Nelson, 172",
-  district: "Cristo Rei",
-  /** CONFIRMAR: cidade/UF e CEP. Quando preenchidos, entram no endereço e na rota. */
-  city: "",
+  district: "Grajaú",
+  city: "São Paulo",
+  /** CONFIRMAR: CEP. Quando preenchido, entra no endereço e na rota. */
   postalCode: "",
 };
 
@@ -62,7 +62,7 @@ export const openingHours = "";
 export const hero = {
   eyebrow: studio.tagline,
   titleLines: ["Traço", "que fica."],
-  text: "Tatuagens feitas pelo Vit, no estúdio em Cristo Rei. Chame para tirar dúvidas, contar sua ideia e pedir um orçamento.",
+  text: "Tatuagens feitas pelo Vit, no Grajaú, zona sul de São Paulo. Chame para tirar dúvidas, contar sua ideia e pedir um orçamento.",
   /** Foto do hero. Vazio = espaço reservado. */
   image: {
     src: "/trabalhos/mao-esqueleto-rosa.webp",
@@ -78,7 +78,7 @@ export const hero = {
 export const about = {
   title: "Vit, no estúdio",
   paragraphs: [
-    "O _studiovit é o estúdio de tatuagem do Vit, em Cristo Rei. O atendimento começa por uma conversa: você conta a ideia, o tamanho e o lugar do corpo, e combina os detalhes direto com ele.",
+    "O _studiovit é o estúdio de tatuagem do Vit, no Grajaú, zona sul de São Paulo. O atendimento começa por uma conversa: você conta a ideia, o tamanho e o lugar do corpo, e combina os detalhes direto com ele.",
     "Os trabalhos mais recentes ficam no Instagram do estúdio, que mostra tatuagens em diferentes estilos.",
   ],
   image: {

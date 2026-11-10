@@ -1,6 +1,6 @@
 # _studiovit — landing page (conceito)
 
-Landing page para o **_studiovit**, estúdio de tatuagem em Cristo Rei.
+Landing page para o **_studiovit**, estúdio de tatuagem no Grajaú, zona sul de São Paulo.
 
 > **Status: demonstração.** Proposta independente, ainda não revisada nem aprovada pelo estúdio.
 > As fotos em `public/` foram enviadas pelo responsável pelo projeto; nenhuma foi baixada do Instagram.
