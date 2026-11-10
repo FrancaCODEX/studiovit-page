@@ -71,7 +71,7 @@ export default function Home() {
       {DEMO_MODE && (
         <p role="note" className="bg-graphite px-4 py-2 text-center text-xs leading-relaxed text-ash">
           <strong className="font-semibold text-bone">Conceito de site.</strong> Proposta independente para o{" "}
-          {studio.handle}, ainda não revisada nem aprovada pelo estúdio. Imagens e textos provisórios.
+          {studio.handle}, ainda não revisada nem aprovada pelo estúdio. Textos provisórios.
         </p>
       )}
 
@@ -149,14 +149,14 @@ export default function Home() {
               </p>
             </div>
 
-            {DEMO_MODE && (
+            {DEMO_MODE && works.some((work) => !work.src) && (
               <p className="mt-8 border border-dashed border-bronze/70 p-4 text-sm leading-relaxed text-ash">
                 <strong className="text-gold">Imagens provisórias.</strong> Os quadros abaixo são espaços reservados e não
                 representam tatuagens do {studio.displayName}. Entram aqui somente fotos autorizadas por ele.
               </p>
             )}
 
-            <ul className="mt-10 columns-2 gap-3 sm:gap-4 lg:columns-3 lg:gap-5">
+            <ul className="mt-10 columns-2 gap-3 sm:gap-4 md:columns-3 lg:gap-5">
               {works.map((work, index) => (
                 <li key={index} className="reveal mb-3 break-inside-avoid sm:mb-4 lg:mb-5">
                   <figure className={`${RATIO_CLASS[work.ratio]} overflow-hidden border border-line`}>

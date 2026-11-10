@@ -3,7 +3,7 @@
 Landing page para o **_studiovit**, estúdio de tatuagem em Cristo Rei.
 
 > **Status: demonstração.** Proposta independente, ainda não revisada nem aprovada pelo estúdio.
-> As imagens são espaços reservados; nenhuma foto do Instagram foi copiada.
+> As fotos em `public/` foram enviadas pelo responsável pelo projeto; nenhuma foi baixada do Instagram.
 
 ## Stack
 
@@ -34,7 +34,8 @@ Campos vazios significam "dado ainda não confirmado" e não aparecem na página
 | Foto do hero e do "Sobre" | `hero.image`, `about.image` |
 | Faixa de "conceito" e bloqueio de indexação | `DEMO_MODE` |
 
-Enquanto o WhatsApp não é preenchido, os botões de contato levam ao Instagram.
+Os botões de contato abrem o WhatsApp com uma mensagem de orçamento já escrita (`whatsapp.message`).
+Se o número for removido, eles passam a levar ao Instagram.
 
 Fotos: use somente imagens autorizadas pelo Vit, em WebP, com até ~1600 px no lado maior.
 
