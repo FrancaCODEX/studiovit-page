@@ -41,12 +41,12 @@ Fotos: use somente imagens autorizadas pelo Vit, em WebP, com até ~1600 px no l
 
 ## Publicar na Cloudflare (Workers)
 
-A configuração está em [`cloudflare.config.ts`](cloudflare.config.ts) (Worker `studiovit-conceito`,
+A configuração está em [`cloudflare.config.ts`](cloudflare.config.ts) (Worker `studiovit-demo`,
 sem domínio personalizado, sem KV/R2/D1). Nenhum token fica no repositório.
 
 ```bash
 npx cf auth login        # uma vez, abre o navegador
-npm run deploy           # compila e publica em studiovit-conceito.<subdomínio>.workers.dev
+npm run deploy           # compila e publica em studiovit-demo.<subdomínio>.workers.dev
 npm run deploy:preview   # publica uma prévia separada (URL própria), sem mexer na versão publicada
 ```
 
