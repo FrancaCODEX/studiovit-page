@@ -90,9 +90,9 @@ export const about = {
 /** Foto do estúdio, exibida na seção de localização. Vazio = não aparece. */
 export const studioPhoto = {
   src: "/estudio/atendimento.webp",
-  alt: "Interior do estúdio: tatuador de costas, sentado junto à maca, atendendo uma cliente",
-  /** CONFIRMAR: autorização da cliente que aparece na foto. */
-  pending: "autorização da cliente que aparece nesta foto.",
+  alt: "Interior do estúdio: tatuador de costas, sentado junto à maca, atendendo uma cliente com o rosto desfocado",
+  /** Aviso opcional exibido no modo demonstração. O rosto da cliente foi desfocado. */
+  pending: "",
 };
 
 /**
@@ -107,8 +107,23 @@ export type Work = { src: string; alt: string; ratio: "4/5" | "1/1" | "3/4" | "4
 
 export const works: Work[] = [
   {
+    src: "/trabalhos/fechamento-peito-abdomen.webp",
+    alt: "Fechamento de peito e abdômen em preto e cinza, com rostos de anjos, mãos em oração, Cristo com coroa de espinhos e uma figura feminina rezando",
+    ratio: "3/4",
+  },
+  {
+    src: "/trabalhos/lettering-peito.webp",
+    alt: "Lettering em preto no peito com a frase “Seja feita Tua vontade”",
+    ratio: "1/1",
+  },
+  {
     src: "/trabalhos/pernas-linha-vermelha.webp",
     alt: "Duas tatuagens em linha vermelha nas pernas: um rosto feminino com chifres e correntes, e uma caveira de animal",
+    ratio: "3/4",
+  },
+  {
+    src: "/trabalhos/polvo-braco.webp",
+    alt: "Polvo em traço preto com pontilhismo na parte interna do braço",
     ratio: "3/4",
   },
   {
@@ -119,6 +134,16 @@ export const works: Work[] = [
   {
     src: "/trabalhos/adaga-perna.webp",
     alt: "Tatuagem em preto de uma adaga ornamentada, da coxa até a panturrilha, na parte de trás da perna",
+    ratio: "3/4",
+  },
+  {
+    src: "/trabalhos/tubarao-coxa.webp",
+    alt: "Tubarão atravessado por um machado, entre ondas, em traço preto na coxa",
+    ratio: "4/5",
+  },
+  {
+    src: "/trabalhos/lirios-quadril.webp",
+    alt: "Ramo de lírios em traço fino, do quadril até a coxa",
     ratio: "3/4",
   },
 ];
