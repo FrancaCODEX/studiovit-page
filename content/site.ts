@@ -82,14 +82,18 @@ export const about = {
     "Os trabalhos mais recentes ficam no Instagram do estúdio, que mostra tatuagens em diferentes estilos.",
   ],
   image: {
-    src: "/estudio/atendimento.webp",
-    alt: "Interior do estúdio: tatuador de costas, sentado junto à maca, atendendo uma cliente",
+    src: "/estudio/vit.webp",
+    alt: "Vit sentado à mesa de um restaurante com varanda, de camiseta preta, com tatuagens nos braços e no pescoço",
   },
-  pending: [
-    "Texto de apresentação aprovado pelo Vit",
-    "Estilos que ele quer destacar",
-    "Autorização da cliente que aparece na foto do estúdio",
-  ],
+  pending: ["Texto de apresentação aprovado pelo Vit", "Estilos que ele quer destacar"],
+};
+
+/** Foto do estúdio, exibida na seção de localização. Vazio = não aparece. */
+export const studioPhoto = {
+  src: "/estudio/atendimento.webp",
+  alt: "Interior do estúdio: tatuador de costas, sentado junto à maca, atendendo uma cliente",
+  /** CONFIRMAR: autorização da cliente que aparece na foto. */
+  pending: "autorização da cliente que aparece nesta foto.",
 };
 
 /**

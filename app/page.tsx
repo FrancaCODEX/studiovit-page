@@ -11,6 +11,7 @@ import {
   mapsUrl,
   openingHours,
   studio,
+  studioPhoto,
   works,
 } from "@/content/site";
 
@@ -213,7 +214,7 @@ export default function Home() {
 
         {/* LOCALIZAÇÃO */}
         <section id="localizacao" aria-labelledby="localizacao-titulo" className="py-20 lg:py-28">
-          <div className="container-page grid gap-10 lg:grid-cols-12 lg:items-end lg:gap-16">
+          <div className="container-page grid gap-10 lg:grid-cols-12 lg:items-center lg:gap-16">
             <div className="lg:col-span-7">
               <SectionHeading id="localizacao-titulo" number="03" label="Localização" title="Onde fica" />
               <address className="mt-8 not-italic">
@@ -233,6 +234,18 @@ export default function Home() {
               )}
             </div>
             <div className="lg:col-span-5">
+              {studioPhoto.src && (
+                <figure className="mb-4">
+                  <div className="aspect-[4/3] overflow-hidden border border-line">
+                    <Photo src={studioPhoto.src} alt={studioPhoto.alt} />
+                  </div>
+                  {DEMO_MODE && studioPhoto.pending && (
+                    <figcaption className="mt-2 text-xs leading-relaxed text-ash">
+                      <span className="text-gold">A confirmar:</span> {studioPhoto.pending}
+                    </figcaption>
+                  )}
+                </figure>
+              )}
               <div className="border border-line bg-coal p-6 sm:p-8">
                 <p className="leading-relaxed text-ash">
                   Abra a rota no Google Maps a partir de onde você estiver. Antes de ir, combine o horário com o{" "}
